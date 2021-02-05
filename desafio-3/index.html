@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banderas</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        padding: 20px;
+        width: 1200px;
+        margin: auto;
+      }
+
+      .bandera {
+        width: 500px;
+        height: 300px;
+        position: relative;
+        display: inline-block;
+        border: 1px solid gray;
+      }
+
+      .espana {
+        background-color: yellow;
+      }
+
+      .espana div {
+        height: 33.3%;
+        background-color: red;
+      }
+
+      .espana div:last-child {
+        position: relative;
+        bottom: -33.3%;
+      }
+
+      .japon {
+        background-color: white;
+      }
+
+      .japon div {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: red;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .dinamarca {
+        background-color: red;
+      }
+
+      .dinamarca div:first-child {
+        height: 100%;
+        width: 8%;
+        background-color: white;
+        position: absolute;
+        left: 28%;
+      }
+
+      .dinamarca div:last-child {
+        height: 12%;
+        width: 100%;
+        background-color: white;
+        position: absolute;
+        top: 46%;
+      }
+
+      .emiratos {
+        background-color: red;
+      }
+
+      .emiratos div {
+        height: 33.3%;
+        width: 75%;
+        position: relative;
+        left: 25%;
+      }
+
+      .emiratos div:first-child {
+        background-color: green;
+      }
+
+      .emiratos div:nth-child(2) {
+        background-color: white;
+      }
+
+      .emiratos div:last-child {
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bandera espana">
+      <div></div>
+      <div></div>
+    </div>
+
+    <div class="bandera japon">
+      <div></div>
+    </div>
+
+    <div class="bandera dinamarca">
+      <div></div>
+      <div></div>
+    </div>
+
+    <div class="bandera emiratos">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>
